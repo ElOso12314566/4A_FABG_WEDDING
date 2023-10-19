@@ -1,0 +1,40 @@
+/*========== Blog Section Start ==========*/
+.blog__section{
+    overflow: hidden;
+    position: relative;
+    .left__shape{
+        position: absolute;
+        top: -300px;
+        left: -80px;
+        z-index: -99;
+        img{
+            @include imgw;
+        }
+    }
+}
+.blog__items{
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease-in-out;
+    .blog__thumb{
+        img{
+            @include imgw;
+        }
+    }
+    .blog__content{
+        padding: 30px 20px;
+        h4{
+            text-transform: capitalize;
+            margin-top: 0;
+        }
+        .blog-btn{
+            font-size: 18px;
+            text-transform: capitalize;
+            font-weight: 600;
+            transition: all 0.3s;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+}
+/*========== Blog Section End ==========*/

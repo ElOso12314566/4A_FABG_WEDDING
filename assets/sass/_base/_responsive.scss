@@ -1,0 +1,670 @@
+//Main Responsive Start
+//Main Responsive Start
+
+
+
+//Global Responsive Start
+@media screen and (max-width: 1199px){
+	h2 {
+		font-size: 54px;
+	}
+	h3 {
+		font-size: 32px;
+	}
+	p{
+		font-size: 17px;
+	}
+}
+@media screen and (max-width: 991px){
+	h1 {
+		font-size: 46px;
+	}
+	h2 {
+		font-size: 42px;
+	}
+	h3 {
+		font-size: 24px;
+	}
+	h4 {
+		font-size: 26px;
+	}
+	h6 {
+		font-size: 22px;
+	}
+}
+@media screen and (max-width: 767px){
+	h5 {
+		font-size: 19px;
+	}
+	p{
+		font-size: 16px;
+		line-height: 26px;
+	}
+	h4{
+		font-size: 24px;
+	}
+}
+@media screen and (max-width: 575px){
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 37px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 22px;
+	}
+	h6 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 500px){
+	h2 {
+		font-size: 30px;
+	}
+	h5 {
+		font-size: 20px;
+	}
+}
+@media screen and (max-width: 420px){
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 27px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 19px;
+	}
+	h5 {
+		font-size: 18px;
+	}
+	p{
+		font-size: 14px;
+	}
+}
+//Global Responsive End
+
+//Header Section Responsive Start
+@media screen and (max-width: 991px) {
+	.header-section{
+		border-bottom: unset;
+		.header-wrapper{
+			justify-content: space-between;
+			width: 100%;
+		}
+	}
+	.main-menu {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		display: inline !important;
+		left: 0;
+		margin-top: 20px;
+		z-index: 999;
+		padding: 0px 0px;
+		transition: all 2s !important;
+		transform-origin: top;
+		max-height: calc(100vh - 130px);
+		overflow-y: auto;
+		border-radius: 10px;
+		background-color: rgba(220, 189, 140, 0.9);
+		&:not(.active) {
+			display: none !important;
+			transition: all 2s;
+		}
+		li {
+			width: 100%;
+			border-bottom: none;
+			border-radius: 10px;
+			&:not(:last-child) {
+				margin-right: 0 !important;
+				margin-bottom: 15px;
+			}
+			a{
+				display: block;
+				padding: 5px 10px;
+				text-transform: capitalize;
+				font-size: 18px !important;
+			}
+			.sub-menu{
+				transform: translateY(0px) !important;
+				margin: 0px 10px 15px 20px !important;
+				li{
+					margin-bottom: 10px;
+					a{
+						padding: 12px 15px !important;
+					}
+					.sub-two{
+						position: static !important;
+						width: 100% !important;
+						padding: 15px 10px 20px 30px;
+						li{
+							a{
+								padding: 10px 15px !important;
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+		.btn--items{
+			box-shadow: none;
+			border: unset;
+			.cmn--btn{
+				width: 140px;
+				text-align: center;
+				display: block !important;
+				background: rgb(67, 58, 193);
+    			background: linear-gradient(90deg, rgb(67, 58, 193) 0%, rgb(11, 4, 131) 30%, rgb(0, 215, 255) 100%);
+			}
+		}
+		.active {
+			a {
+				color: var(--white-color);
+			}
+		}
+	}
+	.header-bar {
+		position: relative;
+		width: 40px;
+		height: 20px;
+		span {
+			position: absolute;
+			width: 100%;
+			height: 2px;
+			display: inline-block;
+			transition: all 0.3s;
+			left: 0;
+			background: var(--white-color);
+			&:first-child {
+				top: 0;
+				background: var(--white-color);
+			}
+			&:nth-child(2) {
+				top: 44%;
+				width: 30px;
+				background: var(--white-color);
+			}
+			&:last-child {
+				bottom: 0;
+				width: 25px;
+				background: var(--white-color);
+			}
+		}
+		&.active {
+			span {
+				&:first-child {
+					transform: rotate(45deg) translate(3px, 9px);
+				}
+				&:nth-child(2) {
+					opacity: 0;
+				}
+				&:last-child {
+					transform: rotate(-45deg) translate(3px, -9px);
+					width: 40px;
+				}
+			}
+		}
+		&:hover{
+			cursor: pointer;
+		}
+	}
+	.header-wrapper{
+		.cmn--btn{
+			display: none;
+		}
+	}
+}
+//Header Section Responsive End
+
+
+/*===== Banner Section Start =====*/
+@media screen and (max-width: 1199px){
+	.banner__section{
+		.banner__content{
+			.banner__shape2{
+				position: absolute;
+				top: -160px;
+				left: 80px;
+				right: 0;
+				max-width: 600px;
+			}
+			.banner__shape3{
+				position: absolute;
+				bottom: -160px;
+				left: 80px;
+				right: 0;
+				max-width: 600px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.banner__section{
+		padding: 200px 0;
+		.banner__content{
+			.banner__shape2{
+				max-width: 500px;
+				left: 0;
+				top: -135px;
+				margin: 0 auto;
+			}
+			.banner__shape3{
+				bottom: -135px;
+				right: 30px;
+				max-width: 500px;
+				margin: 0 auto;
+			}
+			h5{
+				&::before{
+					display: none;
+				}
+				&::after{
+					display: none;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.banner__section{
+		padding: 150px 0;
+		.banner__content{
+			.banner__shape2{
+				display: none;
+			}
+			.banner__shape3{
+				display: none;
+			}
+		}
+	}
+	.about__section{
+		.about__wrapper__one{
+			.owl-nav{
+				display: none;
+			}
+		}
+	}
+}
+@media screen and (max-width: 550px) {
+	.banner__section{
+		padding: 70px 0;
+		.banner__content{
+			margin-top: 50px;
+		}
+	}
+	.breadcumd__banner{
+		padding: 50px 0;
+		.breadcumd__wrapper{
+			.right__content{
+				li{
+					font-size: 18px;
+				}
+			}
+		}
+	}
+}
+/*===== Banner Section End =====*/
+
+/*===== About Section Start =====*/
+@media screen and (max-width: 991px) {
+	.style__two{
+		.right__content{
+			.about__tittle{
+				font-size: 36px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.style__two{
+		.right__content{
+			.about__tittle{
+				font-size: 28px;
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px) {
+	.about__section{
+		.about__wrap{
+			.flower__shape{
+			   display: none;
+			}
+			.flower__shape__two{
+			   display: none;
+			}
+		}
+	}
+}
+/*===== About Section End =====*/
+
+/*===== Celebrate Section Start =====*/
+@media screen and (max-width: 1199px) {
+	.celebrate__section{
+		.flowers__shape{
+			display: none;
+		}
+		.left__shape{
+			display: none;
+		}
+		.celebrate__wrapper{
+			.border__shape{
+				display: none
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.celebrate__section{
+		.celebrate__content{
+			.celebrate__tittle{
+				font-size: 42px;
+			}
+			ul{
+				flex-wrap: wrap;
+				li{
+					font-size: 32px;
+					margin-right: 20px;
+				}
+			}
+		}
+	}
+}
+/*===== Celebrate Section End =====*/
+
+/*===== Love Section Start =====*/
+@media screen and (max-width: 1199px) {
+	.love__section{
+		.love__items{
+			.love__thumb{
+				padding: 20px 0;
+			}
+		}
+	}
+	.member__wedding__section{
+		.owl-dots{
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 400px) {
+	.love__section{
+		.love__items{
+			.love__thumb{
+				.love__wrapper{
+					.love__content{
+						p{
+							font-size: 9px;
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*===== Love Section End =====*/
+
+/*===== Testimonial Section Start =====*/
+@media screen and (max-width: 991px) {
+	.testimonial__section{
+		padding-top: 120px;
+		.left__shape{
+			display: none;
+		}
+		.right__shape{
+			display: none;
+		}
+		.testi__items{
+			.testi__thumb{
+				top: 92px;
+				width: 120px;
+				height: 120px;
+				img{
+					@include imgw;
+				}
+			}
+		}
+	}
+}
+/*===== Testimonial Section End =====*/
+
+/*===== Wedding Section Start =====*/
+@media screen and (max-width: 1399px) {
+	.wedding__section{
+		.wedding__items{
+			.content__cover{
+				.wedding__content{
+					h3{
+						text-transform: uppercase;
+						font-weight: 700;
+						margin-bottom: 0px;
+						font-size: 28px;
+					}
+					.date{
+						margin-bottom: 5px;
+						h6{
+							font-size: 22px;
+						}
+					}
+					.date__two{
+						margin-bottom: 15px;
+						h6{
+							font-size: 22px;
+						}
+					}
+					h4{
+						font-size: 28px;
+					}
+					.wedding__button{
+						margin-top: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.wedding__section{
+		.wedding__items{
+			.wedding__content{
+				h3{
+					font-size: 24px;
+					margin-bottom: 10px;
+				}
+				.date{
+					margin-bottom: 20px;
+					h6{
+						font-size: 22px;
+					}
+				}
+				.date__two{
+					margin-bottom: 40px;
+					h6{
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.wedding__section{
+		.wedding__items{
+			.wedding__content{
+				h3{
+					margin-bottom: 15px;
+				}
+				.date{
+					margin-bottom: 30px;
+					h6{
+						font-size: 22px;
+					}
+				}
+				.date__two{
+					margin-bottom: 50px;
+					h6{
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.wedding__section{
+		.wedding__items{
+			.content__cover{
+				.wedding__content{
+					h3{
+						font-size: 20px;
+					}
+					.date{
+						h6{
+							font-size: 20px;
+						}
+					}
+					.date__two{
+						h6{
+							font-size: 20px;
+						}
+					}
+					h4{
+						font-size: 24px;
+					}
+					.wedding__button{
+						margin-top: 15px;
+						.cmn--btn{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 350px) {
+	.wedding__section{
+		.wedding__items{
+			.content__cover{
+				.wedding__content{
+					h3{
+						text-transform: uppercase;
+						font-weight: 700;
+						margin-bottom: 10px;
+					}
+					.date{
+						margin-bottom: 20px;
+						h6{
+							font-weight: 700;
+						}
+					}
+					.date__two{
+						margin-bottom: 30px;
+						h6{
+							font-weight: 700;
+						}
+					}
+					.wedding__button{
+						margin-top: 15px;
+						.cmn--btn{
+							font-size: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*===== Wedding Section End =====*/
+
+/*===== Blog Single Start =====*/
+@media screen and (max-width: 991px) {
+    .blog__single{
+        .blog__single__items{
+            .single__content{
+                ul{
+                    li{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px) {
+    .blog__single{
+        .blog__instructor__items{
+            .riview__wrapper{
+                .review__items{
+                    .review__content{
+                        .head__wrap{
+                            flex-wrap: wrap;
+                            span{
+                                margin-left: 15px;
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                }
+            }
+            .style__riview{
+                margin-left: initial;
+            }
+        }
+    }
+}
+@media screen and (max-width: 463px) {
+    .blog__single{
+        .blog__instructor__items{
+            .riview__wrapper{
+                .review__items{
+                    .review__content{
+                        .head__wrap{
+                            span{
+                                margin-left: initial;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*===== Blog Single End =====*/
+
+/*===== Attending Start =====*/
+@media screen and (max-width: 991px) {
+	.attending__section{
+		.attending__items{
+			position: relative;
+			.attending__content{
+				h6{
+					font-size: 19px;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 575px) {
+	.attending__section{
+		.attending__items{
+			position: relative;
+			.attending__content{
+				h6{
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}
+/*===== Attending End =====*/

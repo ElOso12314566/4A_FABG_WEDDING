@@ -1,0 +1,135 @@
+/*========== About Section Start ==========*/
+.about__section{
+    overflow: hidden;
+    position: relative;
+    .left__thumb{
+        img{
+            @include imgw;
+        }
+    }
+    .shape__right{
+        position: absolute;
+        top: -530px;
+        right: 0;
+        max-width: 950px;
+        height: auto;
+        img{
+            @include imgw;
+        }
+    }
+    .shape__one{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .about__items{
+        position: relative;
+        .about__thumb{
+            border: 10px solid var(--theme-color);
+            position: relative;
+            img{
+                @include imgw;
+            }
+            .about__effect{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                .tittle{
+                    background-color: rgb(212, 186, 149,0.6);
+                    padding: 30px 20px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .about__wrapper__one{
+        position: relative;
+        .owl-nav{
+            opacity: 0;
+            transition: all 0.4s ease-in-out;
+            .owl-next {
+                padding: 0!important;
+                font: inherit;
+                color: var(--white-color) !important;
+                background: var(--theme-color) !important;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                border-radius: 100% !important;
+                position: absolute;
+                top: 48%;
+                right: -40px;
+                transform: translate(-50%, -50%);
+            }
+            .owl-prev{
+                padding: 0!important;
+                font: inherit;
+                color: var(--white-color) !important;
+                background: var(--theme-color) !important;
+                width: 40px;
+                height: 40px;
+                line-height: 35px;
+                border-radius: 100% !important;
+                position: absolute;
+                top: 48%;
+                left: -7px;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &:hover .owl-nav{
+            opacity: 1;
+        }
+    }
+    .owl-carousel .owl-nav.disabled {
+        display: block !important;
+    }
+    .owl-theme .owl-dots .owl-dot {
+        display: inline-block;
+        zoom: 1;
+        display: none;
+    }
+    .about__wrap{
+        position: relative;
+        .flower__shape{
+            position: absolute;
+            top: -160px;
+            left: -110px;
+            z-index: 99;
+            img{
+                @include imgw;
+            }
+        }
+        .flower__shape__two{
+            position: absolute;
+            bottom: -160px;
+            right: -110px;
+            z-index: 99;
+            img{
+                @include imgw;
+            }
+        }
+    }
+    .right__content{
+        .about__tittle{
+            text-transform: capitalize;
+            font-size: 42px;
+            color: var(--theme-color);
+        }
+    }
+}
+.style__two{
+    position: relative;
+    .right__shape{
+        position: absolute;
+        bottom: -220px;
+        right: -50px;
+        z-index: -99;
+        img{
+            @include imgw;
+        }
+    }
+}
+/*========== About Section End ==========*/
